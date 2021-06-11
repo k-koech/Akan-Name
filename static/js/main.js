@@ -4,6 +4,8 @@ function GenerateAkan()
     var date = document.getElementById("date").value;
     var month = document.getElementById("month").value;
     var year = document.getElementById("year").value;
+    var gender=document.getElementsByName('gender');
+
 
     if(date<=0 || date>31)
     {
@@ -27,10 +29,24 @@ function GenerateAkan()
             }
             else
             {
-                var gender=document.getElementsByName('gender');
                 if(!(gender[0].checked || gender[1].checked))
                 {
                     alert("Please Select Your Gender!");
+                }
+                else
+                {
+                    if (document.getElementById(gender[0]).checked) 
+                        {
+                            gender = document.getElementById("gender1").value;
+                        }
+                    if (document.getElementById(gender[1]).checked) 
+                        {
+                            gender = document.getElementById("gender2").value;
+                        }
+                    document.getElementById("showAkan").innerHTML+=date  ;
+                    document.getElementById("showAkan").innerHTML+=month  ;
+                    document.getElementById("showAkan").innerHTML+=year  ;
+                    document.getElementById("showAkan").innerHTML+=gender ;
                 }
             }
 
