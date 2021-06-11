@@ -1,0 +1,26 @@
+body
+{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#container
+{
+  background-color: rgb(221, 220, 220);
+}
+#container .navbar-brand
+{
+  color: rgb(255, 255, 255) !important;
+}
+#container .row
+{
+  padding: 1em !important;
+  display: flex !important;
+  margin: 0px 1em !important;
+  justify-content: space-evenly !important;
+}
+#container .col1
+{
+  background-color: white;
+  border-radius: 5px;
+  padding:1em;
+}
