@@ -24,3 +24,14 @@ body
   border-radius: 5px;
   padding:1em;
 }
+
+/* ...................
+Footer
+................... */
+#footer
+{
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
