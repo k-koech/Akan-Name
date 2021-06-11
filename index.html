@@ -11,6 +11,92 @@
     <title>Akan Name</title>
   </head>
   <body>
+<section id="container" class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">
+        <!-- <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        Akan Name Calculator
+        </a>
+    </nav>
+    <div class="container">
+        <div class="row" >
+            <p>
+                Akan names are derived from Ghanian culture corresponding to the day of the week they were born.
+                
+                This application is a simple web app that generates an Akan name based on the date of birth and 
+        
+                gender by determining the day one was born.
+        
+                For our case,when one enters the day,month and year he or she was born,it calculates the day of the week 
+                
+                that the person was born in Ghanian language.
+             </p>
+        </div>
+    <div class="row" >
+        <div class="col-md-5 col-12 col1">
+                <h4>Fill the form </h4>
+                <div class="form-Card">
+                    <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Date</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="date">
+                        <p class="bg-danger" id="dateerror" style="color: #fff;"></p>
+                    </div>
+                    </div>
+                
+                    <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Month</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="month">
+                        <p class="bg-danger" id="montherror" style="color: #fff;"></p>
+                    </div>
+                    </div>
+                
+                    <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Year</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="year">
+                    </div>
+                    </div>
+                
+                    <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gender1" value="male" >
+                            <label class="form-check-label" for="gridRadios1">
+                            Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gender2" value="female">
+                            <label class="form-check-label" for="gridRadios2">
+                            Female
+                            </label>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    </fieldset>
+                
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary" onclick="Calculate()">Submit</button>
+                    </div>
+                </div>
+        
+            </p>
+
+        </div>
+
+
+      
+      </div>
+    </div>
+
+
+
+
 
     <script src="static/js/main.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
