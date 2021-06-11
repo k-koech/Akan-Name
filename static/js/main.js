@@ -35,11 +35,11 @@ function GenerateAkan()
                 }
                 else
                 {
-                    if (document.getElementById(gender[0]).checked) 
+                    if (document.getElementById("gender1").checked) 
                         {
                             gender = document.getElementById("gender1").value;
                         }
-                    if (document.getElementById(gender[1]).checked) 
+                    else if (document.getElementById("gender2").checked) 
                         {
                             gender = document.getElementById("gender2").value;
                         }
