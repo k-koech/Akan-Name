@@ -18,6 +18,12 @@ body
   margin: 0px 1em !important;
   justify-content: space-evenly !important;
 }
+#container .row1
+{
+  background-color: #fff;
+  margin :1em;
+  border-radius: 5px;
+}
 #container .col1
 {
   background-color: white;
