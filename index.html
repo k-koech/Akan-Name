@@ -34,26 +34,26 @@
         </div>
     <div class="row" >
         <div class="col-md-5 col-12 col1">
-                <h4>Fill the form </h4>
+                <h4  class="text-center">Fill the form </h4>
                 <div class="form-Card">
                     <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Date</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="date">
+                        <input type="text" class="form-control" id="date" placeholder="DD">
                     </div>
                     </div>
                 
                     <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Month</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="month">
+                        <input type="text" class="form-control" id="month" placeholder="MM">
                     </div>
                     </div>
                 
                     <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Year</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="year">
+                        <input type="text" class="form-control" id="year" placeholder="YY ">
                     </div>
                     </div>
                 
@@ -77,20 +77,22 @@
                         </div>
                     </div>
                     </fieldset>
-                
-                    <div class="button">
-                        <button type="submit" class="btn btn-primary" onclick="GenerateAkan()">Submit</button>
-                    </div>
+
+                    <div class="form-group row">
+                            <button type="submit" class="col-sm-3 col-form-label btn btn-primary" onclick="location.reload();">Clear</button>
+                            <div class="col-sm-9">
+                                <button type="submit" class="btn btn-primary" onclick="GenerateAkan()">Submit</button>
+                            </div>
+                    </div>                 
+                    
                 </div>
-        
-            </p>
 
         </div>
 
         <div class="col-md-5 col-12 col1">
             <div class="AkanDisplay">
-                <h4>Your Akan Name Is</h4>
-                <p class="bg-success" id="showAkan"></p>
+                <h4 class="text-center">Your Akan Name</h4>
+                <button type="button" class="btn btn-success m-auto" id="showAkan">Success</button>
             </div>
         </div>
       </div>

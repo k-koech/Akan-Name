@@ -43,20 +43,7 @@ function GenerateAkan()
                         {
                             gender = document.getElementById("gender2").value;
                         }
-                    
-                        //    var digits = year.toString().split('');
-                        //    var singleDigits = year.toString().split('');
-                        //     var firstNumber = singleDigits[0];
-                        //     var secondNumber = singleDigits[1];
-                        //     var thirdNumber = singleDigits[2];
-                        //     var fourthNumber = singleDigits[3];
-        
-                        // var CC = firstNumber.concat(secondNumber);
-                        // var YY = thirdNumber.concat(fourthNumber);
-        
-                        // var f = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-                        //  d = Math.round(d);
-                          
+                                              
                         var digits = year.toString().split('');
                         var singleDigits = year.toString().split('');
                         var firstNumber = singleDigits[0];
@@ -68,7 +55,7 @@ function GenerateAkan()
                         var YY = parseInt(thirdNumber.concat(fourthNumber));
         
                         d = (((CC/4) -2*CC-1) + (5*YY/4) + (26*(MM+1)/10) + DD) % 7;
-                        // d = Math.round(d);
+                        d = Math.round(d);
                          if(gender == "male")
                          {
                              akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
