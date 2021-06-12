@@ -68,9 +68,7 @@ function GenerateAkan()
                         var YY = thirdNumber.concat(fourthNumber);
         
                         d = ( (  (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-                        
-                        
-                        // d = Math.round(d);
+                        d = Math.round(d);
                         // if(gender == "male")
                         // {
                         //     akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
