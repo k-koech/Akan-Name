@@ -1,19 +1,19 @@
      
 function GenerateAkan() 
 {
-    var date = document.getElementById("date").value;
-    var month = document.getElementById("month").value;
+    var DD = document.getElementById("date").value;
+    var MM = document.getElementById("month").value;
     var year = document.getElementById("year").value;
     var gender=document.getElementsByName('gender');
 
 
-    if(date<=0 || date>31)
+    if(DD<=0 || DD>31)
     {
         alert("Enter a valid date!");
     }
     else
     {
-        if(month<1 || month>12)
+        if(DD<1 || DD>12)
         {
             alert("Enter a valid month!");
         }
@@ -39,14 +39,69 @@ function GenerateAkan()
                         {
                             gender = document.getElementById("gender1").value;
                         }
-                    else if (document.getElementById("gender2").checked) 
+                    if (document.getElementById("gender2").checked) 
                         {
                             gender = document.getElementById("gender2").value;
                         }
-                    document.getElementById("showAkan").innerHTML+=date  ;
-                    document.getElementById("showAkan").innerHTML+=month  ;
-                    document.getElementById("showAkan").innerHTML+=year  ;
-                    document.getElementById("showAkan").innerHTML+=gender ;
+                    
+                        //    var digits = year.toString().split('');
+                        //    var singleDigits = year.toString().split('');
+                        //     var firstNumber = singleDigits[0];
+                        //     var secondNumber = singleDigits[1];
+                        //     var thirdNumber = singleDigits[2];
+                        //     var fourthNumber = singleDigits[3];
+        
+                        // var CC = firstNumber.concat(secondNumber);
+                        // var YY = thirdNumber.concat(fourthNumber);
+        
+                        // var f = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+                        //  d = Math.round(d);
+                          
+                        var digits = year.toString().split('');
+                        var singleDigits = year.toString().split('');
+                        var firstNumber = singleDigits[0];
+                        var secondNumber = singleDigits[1];
+                        var thirdNumber = singleDigits[2];
+                        var fourthNumber = singleDigits[3];
+        
+                        var CC = firstNumber.concat(secondNumber);
+                        var YY = thirdNumber.concat(fourthNumber);
+        
+                        d = ( (  (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+                        
+                        
+                        // d = Math.round(d);
+                        // if(gender == "male")
+                        // {
+                        //     akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+                        //     result = akanNames[d];
+                        //     document.getElementById("showAkan").innerHTML = result;
+                        // }
+                        // else if(gender == "female")
+                        // {
+                        //     akanNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+                        //     result = akanNames[d];
+                        //     document.getElementById("showAkan").innerHTML = result;
+                        // }
+                         document.getElementById("showAkan").innerHTML+=d  ;
+                        // document.getElementById("showAkan").innerHTML+=YY  ;
+                        //  document.getElementById("showAkan").innerHTML+=thirdNumber  ;
+                        //  document.getElementById("showAkan").innerHTML+=fourthNumber ;
+                        // if(gender == "male")
+                        // {
+                        //     akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+                        //     result = akanNames[d];
+                        //     document.getElementById("showAkan").innerHTML = result;
+                        // }
+                        // else if(gender == "female")
+                        // {
+                        //     akanNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+                        //     result = akanNames[d];
+                        //     document.getElementById("showAkan").innerHTML = d;
+                        // }
+                        
+                
+                   
                 }
             }
 
