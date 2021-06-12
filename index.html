@@ -8,18 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
      <link href="static/css/style.css" rel="stylesheet" >
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet" >
     <title>Akan Name</title>
   </head>
   <body>
-<section id="container" class="container-fluid">
+<section id="container" >
     <nav class="navbar navbar-dark bg-dark ">
-        <a class="navbar-brand" href="#">
-        <!-- <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-        Akan Name Calculator
+        <a class="navbar-brand ml-5" href="index.html">
+             <i class="fa fa-calculator" aria-hidden="true"></i>Akan Name Calculator
         </a>
     </nav>
     <div class="container">
-        <div class="row" >
+        <div class="row rows" >
             <p>
                 Akan names are derived from Ghanian culture corresponding to the day of the week they were born.
                 
@@ -32,75 +32,113 @@
                 that the person was born in Ghanian language.
              </p>
         </div>
-    <div class="row" >
-        <div class="col-md-5 col-12 col1">
+        <div class="row rows" >
+            <div class="col-md-5 col-12 col1">
                 <h4  class="text-center">Fill the form </h4>
                 <div class="form-Card">
                     <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Date</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="date" placeholder="DD">
-                    </div>
-                    </div>
-                
-                    <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Month</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="month" placeholder="MM">
-                    </div>
+                        <label class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="date" placeholder="DD">
+                        </div>
                     </div>
                 
                     <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Year</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="year" placeholder="YY ">
+                        <label class="col-sm-2 col-form-label">Month</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="month" placeholder="MM">
+                        </div>
                     </div>
+                
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Year</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="year" placeholder="YY ">
+                        </div>
                     </div>
                 
                     <fieldset class="form-group">
-                    <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                        <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="gender1" value="male" >
-                            <label class="form-check-label" for="gridRadios1">
-                            Male
-                            </label>
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                            <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gender1" value="male" >
+                                <label class="form-check-label" for="gridRadios1">
+                                Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gender2" value="female">
+                                <label class="form-check-label" for="gridRadios2">
+                                Female
+                                </label>
+                            </div>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="gender2" value="female">
-                            <label class="form-check-label" for="gridRadios2">
-                            Female
-                            </label>
-                        </div>
-                        
-                        </div>
-                    </div>
                     </fieldset>
 
                     <div class="form-group row">
-                            <button type="submit" class="col-sm-3 col-form-label btn btn-primary" onclick="location.reload();">Clear</button>
+                            <button type="submit" class="col-sm-3 col-form-label btn btn-success" onclick="location.reload();">Clear</button>
                             <div class="col-sm-9">
-                                <button type="submit" class="btn btn-primary" onclick="GenerateAkan()">Submit</button>
+                                <button type="submit" class="btn btn-success" onclick="GenerateAkan()">Submit</button>
                             </div>
                     </div>                 
                     
                 </div>
-
         </div>
 
         <div class="col-md-5 col-12 col1">
             <div class="AkanDisplay">
                 <h4 class="text-center">Your Akan Name</h4>
-                <button type="button" class="btn btn-success m-auto" id="showAkan">Success</button>
+                <p class="btn m-auto bg-success" id="showAkan"></p>
             </div>
         </div>
       </div>
     </div>
 
-    <section id="footer">
-        Kelvin Kipchumba Koech
-    </section>
+<section id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 footer-box">
+      <p>Proud to serve you,</p>
+      <div id="map"></div>
+    </div>
+
+    <div class="col-md-4 footer-box">
+      <p><b>CONTACT US</b></p>
+      <p><i class="fas fa-map-marker-alt"></i> Ongata Rongai, Magadi Road Kenya</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> +254 725801772</p>
+      <p><i class="fa fa-envelope-o" aria-hidden="true"></i>koechkelvin97@gmail.com</p>
+    </div>
+
+    <div class="col-md-4 footer-box">
+      <p><b>SUBSCRIBE TO MY NEWSLETTER</b></p>
+      <input class="form-control" type="" name="" placeholder="your email">
+      <button class="btn btn-dark" type="submit">Subscribe</button>
+    </div> 
+  </div>
+    <hr>
+    <p></p>
+    <h4>Follow Me &#128525</h4>
+    <div id="social-media">
+        <a href="https://web.facebook.com/koechkelvin97" target="_blank" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/triplek254" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/triple_.k._/" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/triple-k-b4b8a514a/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/k-koech" target="_blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <p class="copyright">&copy;Kelvin Kipchumba Koech <script>document.write(new Date().getFullYear());</script>. All rights reserved</p>
+</div>
+ 
+  <!-- floating button-->
+   <a href="https://api.whatsapp.com/send?phone=254725801772&text=Hello%2C%20am%20happy%20with%20your%20work%20bravo" class="float" target="_blank" data-placement="left" title="Please leave a message for me">
+      <i class="fa fa-whatsapp my-float" aria-hidden="true"></i>
+   </a>
+    <a href="#" class="backToTop" data-placement="right" title="Back to top">
+      <i class="fa fa-arrow-up toTop" aria-hidden="true"></i>
+   </a>
+
+</section>
  
    
 

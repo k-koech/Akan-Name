@@ -24,7 +24,20 @@ body
   border-radius: 5px;
   padding:1em;
 }
-
+.AkanDisplay
+{
+  text-align: center;
+}
+.AkanDisplay h4
+{
+  margin:1em;
+}
+.AkanDisplay p
+{
+  color: white;
+  margin:1em;
+  font-size: 1.2em;
+}
 /* ...................
 Footer
 ................... */

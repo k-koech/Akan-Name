@@ -1,4 +1,3 @@
-     
 function GenerateAkan() 
 {
     var DD = parseInt(document.getElementById("date").value);
