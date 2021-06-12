@@ -44,47 +44,36 @@ function GenerateAkan()
                         }
                                               
                         var digits = year.toString().split('');
-                        var singleDigits = year.toString().split('');
-                        var firstNumber = singleDigits[0];
-                        var secondNumber = singleDigits[1];
-                        var thirdNumber = singleDigits[2];
-                        var fourthNumber = singleDigits[3];
+                        var firstDigit = digits[0];
+                        var secondDigit = digits[1];
+                        var thirdDigit = digits[2];
+                        var fourthDigit = digits[3];
         
-                        var CC = parseInt(firstNumber.concat(secondNumber));
-                        var YY = parseInt(thirdNumber.concat(fourthNumber));
+                        var CC = parseInt(firstDigit.concat(secondDigit));
+                        var YY = parseInt(thirdDigit.concat(fourthDigit));
         
                         d = (((CC/4) -2*CC-1) + (5*YY/4) + (26*(MM+1)/10) + DD) % 7;
                         d = Math.round(d);
-                         if(gender == "male")
+                         if(gender === "male")
                          {
                              akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-                             result = akanNames[d];
-                             document.getElementById("showAkan").innerHTML += result;
+                             days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+                             akanName = akanNames[d];
+                             document.getElementById("showAkan").innerHTML = "<p class='bg-success'>"+akanName+"</p>";
+                             document.getElementById("showDay").innerHTML = "Born on <strong>"+days[d]+"</strong>";
+
                          }
-                         else if(gender == "female")
+                         else if(gender === "female")
                          {
                              akanNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-                             result = akanNames[d];
-                             document.getElementById("showAkan").innerHTML += result;
-                         }
-                         document.getElementById("showAkan").innerHTML+=d  ;
-                        //   document.getElementById("showAkan").innerHTML+=YY  ;
-                        //  document.getElementById("showAkan").innerHTML+=thirdNumber  ;
-                        //  document.getElementById("showAkan").innerHTML+=fourthNumber ;
-                        // if(gender == "male")
-                        // {
-                        //     akanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-                        //     result = akanNames[d];
-                        //     document.getElementById("showAkan").innerHTML = result;
-                        // }
-                        // else if(gender == "female")
-                        // {
-                        //     akanNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-                        //     result = akanNames[d];
-                        //     document.getElementById("showAkan").innerHTML = d;
-                        // }
-                        
-                
+                             days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+                             akanName = akanNames[d];
+                             document.getElementById("showAkan").innerHTML = "<p class='bg-success'>"+akanName+"</p>";
+                             document.getElementById("showDay").innerHTML = "Born on <strong>"+days[d]+"</strong>";
+
+                         }                                
                    
                 }
             }
