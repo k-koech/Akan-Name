@@ -184,11 +184,11 @@ Footer
 
 @media screen and (max-width: 768px) 
 {
- #header .btnWorkspace
-{
-  display: flex;
-  justify-content: center;
-}
+  #header .btnWorkspace
+  {
+    display: flex;
+    justify-content: center;
+  }
   #header .btn
   {
     font-size: 1.2em;

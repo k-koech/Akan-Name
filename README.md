@@ -4,6 +4,9 @@
 ## Project description
     - Generate Akan names
     - The web application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+    - On getting the webpage you find a navigation.Go to calculate or Get your Akan name button.
+    - Fill the form and submit and it will automatically calculate your akan name.
+    - The website is responsive in all devices.
   
 ​
 ## Author(s) information
