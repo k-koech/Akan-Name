@@ -106,7 +106,7 @@ WORKSPACE
 
 }
 /* ...................
-Footer
+FOOTER
 ................... */
 
 #footer
@@ -207,7 +207,9 @@ Footer
 	margin:auto;
     font-size: 1.2em;
 }
-
+/* ...........................
+RESPONSIVENESS
+............................. */
 @media screen and (max-width: 768px) 
 {
   #header .btnWorkspace
