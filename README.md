@@ -26,7 +26,7 @@
     - Click the submit button to see what my Akan name would be
   
 ## Live link
-    Deployed project can be accessed here -  [Akan Names Generator](k-koech.github.io/akan-name/)
+    Deployed project can be accessed here -  [Akan Names Generator](https://k-koech.github.io/Akan-Name/)
     [Link to Google](https://www.google.com)
 ​
 ## Technologies used
