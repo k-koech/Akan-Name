@@ -54,7 +54,7 @@ function GenerateAkan()
                         var CC = parseInt(firstDigit.concat(secondDigit));
                         var YY = parseInt(thirdDigit.concat(fourthDigit));
         
-                        d = (((CC/4) -2*CC-1) + (5*YY/4) + (26*(MM+1)/10) + DD) % 7;
+                        d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
                         d = Math.round(d);
                          if(gender === "male")
                          {
