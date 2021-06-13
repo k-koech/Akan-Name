@@ -40,4 +40,4 @@
   
 ## License and Copyright information
    Copyright 2021 Kelvin Kipchumba Koech
-   Licenced under [MT License](LICENCE.md) file
+   Licenced under [MT License](https://github.com/k-koech/Akan-Name/blob/master/LICENSE.md).
