@@ -20,19 +20,34 @@
   <!-- ======= Header Section ======= -->
 <section id="header" class="d-flex align-items-center">
     <div class="container">
-     <nav class="navbar navbar-white bg-white pt-3">
+     <nav class="navbar navbar-expand-lg navbar-light bg-white pt-4">
         <a class="navbar-brand ml-5" href="index.html">
              <i class="fa fa-calculator" aria-hidden="true"></i> Akan<span>Name</span>
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+           
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item px-3">
+                    <a class="nav-link active"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#workspace">Calculate</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#footer">Contacts</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-      <div class="row">
+      <div class="row px-5">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Ghanian culture</h1>
-          <h4 data-aos="fade-up" data-aos-delay="400">In Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</h4>
-          <div data-aos="fade-up" data-aos-delay="800">
-            <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
-            <a href="#workspace" class="btn btn-primary mt-4">Fing your Akan Name</a>
-
+          <h1>Ghanian culture</h1>
+          <h6>In Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</h6>
+          <div class="btnWorkspace" data-aos-delay="800">
+            <a href="#workspace" class="btn btn-primary mt-4">Get your Akan Name</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -45,6 +60,7 @@
 
 <section id="workspace" >
     <div class="container">
+    <h4>Akan Name Calculator</h4>
         <div class="row row1" >
             <p>
                 Akan names are derived from Ghanian culture corresponding to the day of the week they were born.
@@ -103,11 +119,10 @@
                         </div>
                     </fieldset>
 
-                    <div class="form-group row">
-                            <button type="submit" class="col-sm-3 col-form-label btn btn-success" onclick="location.reload();">Clear</button>
-                            <div class="col-sm-9">
-                                <button type="submit" class="btn btn-success" onclick="GenerateAkan()">Submit</button>
-                            </div>
+                    <div class="form-group row" ">
+                            <button type="submit" class="col-md-3 col-sm-6 col-form-label btn btn-success mt-2" onclick="location.reload();">Clear</button>
+                            <button type="submit" class="col-md-8 col-sm-6 btn btn-success mt-2" onclick="GenerateAkan()">Submit</button>
+        
                     </div>                 
                     
                 </div>
@@ -152,22 +167,10 @@
       <i class="fa fa-whatsapp my-float" aria-hidden="true"></i>
    </a>
 
-
- 
-   
-
-
-
-
     <script src="static/js/main.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-     <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="static/vendor/aos/aos.js"></script> 
+    
   </body>
 </html>

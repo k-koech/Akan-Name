@@ -10,16 +10,41 @@ body
 HEADER
 ............................ */
 
-#header .navbar a
+#header .navbar-brand 
 {
   font-size: 1.5em;
     color: #000 !important;
     font-weight: 800;  
     font-family: 'Roboto', sans-serif;
 }
-#header .navbar a span
+#header .navbar-brand span
 {
-  color: red;
+  color: #FC2D00 !important;
+}
+
+#header li a
+{
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #000;
+}
+
+#header li a:hover
+{
+  color: #FC2D00;
+}
+
+#header .btn
+{
+  background-color:#ac7070 !important;
+  border: none;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+#header .btn:hover
+{
+  background-color: #FC2D00 !important;
 }
 /* ..............................
 WORKSPACE
@@ -31,7 +56,11 @@ WORKSPACE
   padding: 1em;
   background-color: rgb(221, 220, 220);
 }
-
+#workspace h4
+{
+  text-align: center;
+  padding: 1em;
+}
 #workspace .row
 {
   padding: 1em !important;
@@ -151,4 +180,19 @@ Footer
 #footer .my-float{
 	margin:auto;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) 
+{
+ #header .btnWorkspace
+{
+  display: flex;
+  justify-content: center;
+}
+  #header .btn
+  {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: auto;
+  }
 }
