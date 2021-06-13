@@ -38,6 +38,10 @@ HEADER
 {
   padding: 0px 3em !important;
 }
+#header .landing h1
+{
+  font-size: 1.7em;
+}
 #header .btn
 {
   background-color:#ac7070 !important;
@@ -225,6 +229,31 @@ Footer
   {
     padding: 0px 1em !important;
   }
+  /* ..............................
+WORKSPACE
+............................ */
+#workspace
+{
+  margin: 10px;
+  padding: 0.2em;
+}
+#workspace h4
+{
+  text-align: center;
+  padding: 1em;
+}
+#workspace .row
+{
+  padding: 1em !important;
+  margin: 0px 0em !important;
+}
+
+#workspace .col1
+{
+  background-color: white;
+  border-radius: 5px;
+  padding:1em;
+}
     /* .........................
     FOOTER
   .......................... */
