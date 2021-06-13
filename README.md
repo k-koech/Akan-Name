@@ -40,4 +40,4 @@
   
 ## License and Copyright information
    Copyright 2021 Kelvin Kipchumba Koech
-   Licenced under [MT License](LICENCE) file
+   Licenced under [MT License](LICENCE.md) file
