@@ -1,30 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
 body
 {
   padding: 0px !important;
   margin: 0px !important;
 }
-#container
+/* ..............................
+HEADER
+............................ */
+
+#header .navbar a
 {
+  font-size: 1.5em;
+    color: #000 !important;
+    font-weight: 800;  
+    font-family: 'Roboto', sans-serif;
+}
+#header .navbar a span
+{
+  color: red;
+}
+/* ..............................
+WORKSPACE
+............................ */
+#workspace
+{
+  margin: 20px;
+  border-radius: 1em;
+  padding: 1em;
   background-color: rgb(221, 220, 220);
 }
-#container .navbar-brand
-{
-  color: rgb(255, 255, 255) !important;
-}
-#container .row
+
+#workspace .row
 {
   padding: 1em !important;
   display: flex !important;
   margin: 0px 1em !important;
   justify-content: space-evenly !important;
 }
-#container .row1
+#workspace .row1
 {
   background-color: #fff;
   margin :1em;
   border-radius: 5px;
 }
-#container .col1
+#workspace .col1
 {
   background-color: white;
   border-radius: 5px;
