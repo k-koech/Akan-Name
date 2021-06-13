@@ -27,6 +27,7 @@
   
 ## Live link
     Deployed project can be accessed here -  [Akan Names Generator](k-koech.github.io/akan-name/)
+    [Link to Google](https://www.google.com)
 ​
 ## Technologies used
     - JS
